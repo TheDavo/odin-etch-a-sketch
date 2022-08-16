@@ -9,28 +9,34 @@
     <script src="./app.js" defer></script>
   </head>
   <body>
-    <div class="grid-options-container">
-      <div class="grid-buttons">
-        <button id="grid1616" onclick="fillWithRectsScaled(16,16)">
-          16 by 16
-        </button>
-        <button id="grid3232" onclick="fillWithRectsScaled(32,32)">
-          32 by 32
-        </button>
-        <button id="grid6464" onclick="fillWithRectsScaled(64,64)">
-          64 by 64
-        </button>
-        <button id="grid-reset" onclick="resetCanvas()">Reset Grid</button>
-      </div>
-      <div class="pen-color">
-        <input type="color" name="pen-color" id="pen-color" />
-        <p>#000000</p>
-      </div>
-    </div>
+    <header>
+      <h1>Etch-A-Sketch</h1>
+    </header>
     <div id="canvas-container">
+      <div class="grid-options-container">
+        <div class="grid-buttons">
+          <button id="grid1616" onclick="fillWithRectsScaled(16,16)">
+            16 by 16
+          </button>
+          <button id="grid3232" onclick="fillWithRectsScaled(32,32)">
+            32 by 32
+          </button>
+          <button id="grid6464" onclick="fillWithRectsScaled(64,64)">
+            64 by 64
+          </button>
+          <button id="grid-reset" onclick="resetCanvas()">Shake It Off!</button>
+        </div>
+      </div>
       <canvas id="drawing-board" width="450px" height="450px">
         My Drawing Board
       </canvas>
+      <div class="color-chooser">
+        <div class="pen-color">
+          <label for="pen-color">Choose Pen Color</label>
+          <input type="color" name="pen-color" id="pen-color" />
+          <p>#000000</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

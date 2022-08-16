@@ -1,21 +1,35 @@
 * {
   box-sizing: border-box;
   background-color: slategray;
+  font-family: sans-serif;
+}
+
+header h1 {
+  text-align: center;
 }
 
 #canvas-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #drawing-board {
   cursor: crosshair;
+  border-radius: 8px;
 }
 
 .grid-options-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.grid-buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  padding: 3rem;
 }
 
 .grid-buttons button {
@@ -27,20 +41,18 @@
 }
 
 .grid-buttons button:hover {
-  transform: translateY(-0.5rem);
+  transform: translateY(-0.25rem);
   transition: ease-in-out 100ms;
   border-radius: 0;
 }
 
 .pen-color {
+  margin: 3rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.pen-color p {
-  font-family: sans-serif;
 }
 
 #pen-color {
@@ -68,4 +80,8 @@
 
 #grid6464 {
   background-color: darkkhaki;
+}
+
+#grid-reset {
+  background-color: darkturquoise;
 }
