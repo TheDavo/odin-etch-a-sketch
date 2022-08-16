@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  background-color: slategray;
+}
+
+#canvas-container {
+  display: flex;
+  justify-content: center;
+}
+
+#drawing-board {
+  cursor: crosshair;
+}
+
+.grid-options-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-buttons button {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: ease-in-out 100ms;
+}
+
+.grid-buttons button:hover {
+  transform: translateY(-0.5rem);
+  transition: ease-in-out 100ms;
+  border-radius: 0;
+}
+
+.pen-color {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pen-color p {
+  font-family: sans-serif;
+}
+
+#pen-color {
+  width: 60px;
+  height: 60px;
+  border: none;
+  margin: 1rem;
+}
+
+/* Copy-pasted this to make the swatch round! */
+
+#pen-color::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+#grid1616 {
+  background-color: seagreen;
+  color: white;
+}
+
+#grid3232 {
+  background-color: bisque;
+}
+
+#grid6464 {
+  background-color: darkkhaki;
+}
